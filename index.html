@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Siyanda's Portfolio Website</title>
+
+    <link rel="shortcut icon" href="images/Logo1.jpg" type="icon image">
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Index">
+            <span class="material-icons-outlined me-1">important_devices</span>
+            Siyanda Xaba
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container px-3">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="snake.html">Snake Game</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#Index">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                </li>
+              </ul>
+              
+<label for="theme" class="theme">
+  <span class="theme__toggle-wrap">
+    <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+    <span class="theme__fill"></span>
+    <span class="theme__icon">
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+      <span class="theme__icon-part"></span>
+    </span>
+  </span>
+</label>
+
+
+
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Hero -->
+      <header class="bg-light py-5">
+        <div class="container px-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5">
+                <h2 class="text-center fw-bold mb-2">Hi! I am Siyanda Xaba,</h2>
+                <h2 class="text-primary text-center fw-bold mb-2"><p>
+                  <span id="typing-text"></span> 
+              </p>
+              <script src="script.js"></script></h2>
+                <p class="lead text-muted mb-4">
+                  I specialize in building web applications using C#, Html, CSS, JavaScript, SQL, Azure, AzureSQL and
+                  Java. Scroll down to see what I have been working on.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                  <a class="btn btn-primary btn-large text-uppercase" href="#about">
+                    Learn More
+                    <span class="material-icons-outlined ms-2">help_outline</span>
+                  </a>
+                  <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">
+                    View My Work
+                    <span class="material-icons-outlined ms-2">manage_search</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 justify-content-center">
+              <div class="Box">
+                <span><img class="img-fluid rounded-3 my-5" src="images/Myself.jpg" alt="Image 1"></span>
+                <span><img class="img-fluid rounded-3 my-5" src="images/Project3.jpg" alt="Image 2"></span>
+                <span><img class="img-fluid rounded-3 my-5" src="images/Project1.jpg" alt="Image 3"></span>
+                <span><img class="img-fluid rounded-3 my-5" src="images/Project2.jpg" alt="Image 4"></span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Hero -->
+
+      <main>
+        <!-- About -->
+        <section id="about" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">About</h2>
+              <p class="lead text-muted mb-5">
+                I am still a final year student at Durban University of technology and a freelance web developer who builds elegant, fast, and
+                scalable web applications.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">palette</span>
+                </div>
+                <h5>Design</h5>
+                <p class="text-muted mb-0">
+                  I create beautiful, modern designs optimized for multiple
+                  color modes (light and dark themes).
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">code</span>
+                </div>
+                <h5>Development</h5>
+                <p class="text-muted mb-0">
+                  I develop responsive, scalable, and fast applications using
+                  the best standards and coding practices.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">settings</span>
+                </div>
+                <h5>Launch & Maintenance</h5>
+                <p class="text-muted mb-0">
+                  Once the application is ready, I will help you launch it and
+                  teach you how to update and maintain it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About -->
+
+        <hr>
+
+        <!-- Projects -->
+        <section id="projects" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Projects</h2>
+              <p class="lead text-muted mb-5">View some of my latest projects</p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/Project1.jpg" alt="Project 1">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">E-Commerce Website</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">C#</div>
+                      <div class="badge bg-primary rounded-pill">CSS</div>
+                      <div class="badge bg-primary rounded-pill">SQL</div>
+                      <div class="badge bg-primary rounded-pill">Azure</div>
+                      <div class="badge bg-primary rounded-pill">Azure SQL</div>
+                      <div class="badge bg-primary rounded-pill">HTML</div>
+                      <div class="badge bg-primary rounded-pill">JavaScript</div>
+                    </div>
+                    <p class="card-text">
+                      An e-commerce website that helps customers get branded University clothes from Universities located in KwaZulu-Natal. In this website you can place an order and the order will be given to a driver that will personally and quickly deliver your order to your door step.
+                      
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://ngdsolutionapp.azurewebsites.net"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      View Website
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/Project2.jpg" alt="Project 2">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">E-Commerce Website</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">C#</div>
+                      <div class="badge bg-primary rounded-pill">CSS</div>
+                      <div class="badge bg-primary rounded-pill">SQL</div>
+                      <div class="badge bg-primary rounded-pill">HTML</div>
+                      <div class="badge bg-primary rounded-pill">Azure</div>
+                      <div class="badge bg-primary rounded-pill">Azure SQL</div>
+                      <div class="badge bg-primary rounded-pill">JavaScript</div>
+                    </div>
+                    <p class="card-text">
+                      My second e-commerce website that helps customers get branded University clothes from Universities located in KwaZulu-Natal
+                      
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://vcc-clothing.azurewebsites.net"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      View Website
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/Mr.jpg" alt="Project 2">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">E-Commerce Website(Mr X)</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">C#</div>
+                      <div class="badge bg-primary rounded-pill">CSS</div>
+                      <div class="badge bg-primary rounded-pill">SQL</div>
+                      <div class="badge bg-primary rounded-pill">HTML</div>
+                      <div class="badge bg-primary rounded-pill">JavaScript</div>
+                    </div>
+                    <p class="card-text">
+                      My third e-commerce website that helps customers get branded University clothes from Universities located in KwaZulu-Natal.
+                      
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://xcodex12.github.io/Mr-X/"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      View Website
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/Project3.jpg" alt="Project 3">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Pizza App</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Java</div>
+                      <div class="badge bg-primary rounded-pill">JavaScript</div>
+                      
+                    </div>
+                    <p class="card-text">
+                      It's a pizza app code that help customers to be able to place a pizza order using their mobile devices anytime and anywhere.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://github.com/Siyanda16-gif/Pizza-App.git"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects -->
+
+        <hr>
+
+        <div class="container py-5">
+        <div class="row justify-content-center">
+          <p>Click the button below to View & download my CV in pdf format:</p>
+          <a href="CV/Siyanda Xaba's Curriculum vitae.pdf" download="My_CV.pdf" class="fw-bold">View</a>
+        </div>
+      </div>
+        
+        <hr>
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Contact</h2>
+              <p class="lead text-muted mb-5">
+                Do you need a full-stack web developer? I would love to hear
+                from you.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-xl-5 col-xxl-6 mb-5">
+                <div id="map"></div>
+              </div>
+              <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Address</h6>
+                  <p class="lead mb-0">KwaZulu-Natal, Durban</p>
+                </div>
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Phone</h6>
+                  <p class="lead mb-0"><a href="tel:0664428931">0664428931</a></p>
+                  
+                </div>
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Email</h6>
+                  <p class="lead mb-0"><a href="mailto:justinmabaso8@gmail.com">justinmabaso8@gmail.COM</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
+      </main>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <div class="container px-5 mb-2">Copyright &copy; 2024 Siyanda's Program.</div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript for Theme Toggle -->
+  <script>
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved theme preference
+    if (localStorage.getItem('theme') === 'dark') {
+      body.setAttribute('data-theme', 'dark');
+    }
+
+    themeToggleButton.addEventListener('click', function() {
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+<script>
+ // Get the theme toggle checkbox
+const themeToggle = document.getElementById("theme");
+
+// Function to switch between light and dark themes based on checkbox state
+function toggleTheme() {
+  if (themeToggle.checked) {
+    document.body.setAttribute("data-theme", "dark"); // Apply dark mode
+  } else {
+    document.body.removeAttribute("data-theme"); // Revert to light mode
+  }
+}
+
+// Add event listener for checkbox change
+themeToggle.addEventListener("change", toggleTheme);
+
+// Initialize the theme based on the current checkbox state
+toggleTheme();
+
+</script>
+
+  </body>
+</html>
